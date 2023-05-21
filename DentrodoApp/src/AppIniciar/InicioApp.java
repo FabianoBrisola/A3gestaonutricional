@@ -4,6 +4,7 @@
  */
 package AppIniciar;
 
+import Receitar_4.Receitas_4;
 import Tela2Plano.Plano_alimentar;
 import Tela_Ct.Tela_chat;
 import dentroPlano.Tela3Plano;
@@ -112,6 +113,11 @@ public class InicioApp extends javax.swing.JFrame {
 
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton7.setText("Receitas");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -205,6 +211,10 @@ new Plano_alimentar().setVisible(true);        // TODO add your handling code he
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
 new Tela_chat().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+new Receitas_4().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
