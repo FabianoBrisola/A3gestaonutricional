@@ -4,7 +4,8 @@
  */
 package dentroPlano;
 
-import Tela2Plano.Plano_alimentar;
+import AppIniciar.InicioApp;
+
 
 /**
  *
@@ -180,7 +181,7 @@ public class Tela3Plano extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-new Plano_alimentar().setVisible(true);        // TODO add your handling code here:
+new InicioApp().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
