@@ -4,6 +4,8 @@
  */
 package dentroPlano;
 
+import Tela2Plano.Plano_alimentar;
+
 /**
  *
  * @author user
@@ -81,6 +83,11 @@ public class Tela3Plano extends javax.swing.JFrame {
 
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton7.setText("Voltar");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("07:10");
 
@@ -171,6 +178,10 @@ public class Tela3Plano extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+new Plano_alimentar().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
