@@ -195,7 +195,8 @@ public class InicioApp extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-new Tela3Plano().setVisible(true);        // TODO add your handling code here:
+new Tela3Plano().setVisible(true);
+dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -203,11 +204,13 @@ new Plano_alimentar().setVisible(true);        // TODO add your handling code he
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-new Tela_chat().setVisible(true);        // TODO add your handling code here:
+new Tela_chat().setVisible(true);
+dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-new Receitas_4().setVisible(true);        // TODO add your handling code here:
+new Receitas_4().setVisible(true);
+dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
