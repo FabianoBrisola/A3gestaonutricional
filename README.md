@@ -11,4 +11,3 @@ Com essa tecnologia, é possível otimizar o processo de cuidado nutricional, pr
 
 ![reversal](https://capsule-render.vercel.app/api?type=slice&reversal=true&color=000000)
 
-![header](https://capsule-render.vercel.app/api?type=rect&height=200&text=Stroke%20Test&fontAlign=70&stroke=00FF00&strokeWidth=3)
