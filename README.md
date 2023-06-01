@@ -8,4 +8,6 @@ Um sistema de gestão nutricional típico possui várias funcionalidades essenci
 Com essa tecnologia, é possível otimizar o processo de cuidado nutricional, promovendo uma abordagem mais eficiente e eficaz para o bem-estar e saúde.
 
 
+
+
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=120&section=header" />
