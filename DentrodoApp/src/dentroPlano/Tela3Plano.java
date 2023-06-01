@@ -192,7 +192,8 @@ dispose(); // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-new cafe_da_manha().setVisible(true);        // TODO add your handling code here:
+new cafe_da_manha().setVisible(true);
+dispose(); // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

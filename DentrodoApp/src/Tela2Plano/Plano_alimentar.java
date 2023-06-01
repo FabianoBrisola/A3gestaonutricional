@@ -144,11 +144,13 @@ public class Plano_alimentar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-new Receitas_4().setVisible(true);        // TODO add your handling code here:
+new Receitas_4().setVisible(true);
+dispose(); // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-new ListaSub().setVisible(true);        // TODO add your handling code here:
+new ListaSub().setVisible(true);
+dispose(); // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
