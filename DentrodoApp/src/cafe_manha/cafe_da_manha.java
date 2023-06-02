@@ -19,11 +19,11 @@ public class cafe_da_manha extends javax.swing.JFrame {
     private String Vegetais;
 
     public class Pessoa {
-        private String bebidas;
-        private String pãe_e_cereais;
-        private String proteinas;
-        private String frutas;
-        private String vegetais;
+        public String bebidas;
+        public String pãe_e_cereais;
+        public String proteinas;
+        public String frutas;
+        public String vegetais;
 
         public void setBebidas(String bebidas) {
             this.bebidas = bebidas;
