@@ -6,6 +6,7 @@ package telaLogin;
 
 import AppIniciar.InicioApp;
 import SistemaRg.Rg;
+import javax.swing.JOptionPane;
 
 public class LoginT extends javax.swing.JFrame {
 
@@ -51,9 +52,20 @@ public class LoginT extends javax.swing.JFrame {
         jLabel2.setText("LOGIN");
 
         adcLogin.setText(" ");
+        adcLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adcLoginActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText("SENHA");
+
+        adcSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adcSenhaActionPerformed(evt);
+            }
+        });
 
         jCheckBox1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jCheckBox1.setText("Lembre-me");
@@ -172,6 +184,16 @@ public class LoginT extends javax.swing.JFrame {
         });
 
     }//GEN-LAST:event_cliqueParaEntrarActionPerformed
+
+    private void adcLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adcLoginActionPerformed
+
+        String nomeUsuario = adcLogin.getText().trim();
+        JOptionPane.showMessageDialog(this, "Nome de usuario: " + nomeUsuario);
+    }//GEN-LAST:event_adcLoginActionPerformed
+
+    private void adcSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adcSenhaActionPerformed
+        fazerLogin();
+    }//GEN-LAST:event_adcSenhaActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField adcLogin;
