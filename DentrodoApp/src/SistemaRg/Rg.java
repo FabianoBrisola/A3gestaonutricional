@@ -1,17 +1,12 @@
-
 package SistemaRg;
 
-
 public class Rg extends javax.swing.JFrame {
-    
-    
-    
+
     public Rg() {
         initComponents();
-        
+
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -259,23 +254,31 @@ public class Rg extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void enderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enderecoActionPerformed
-        // TODO add your handling code here:
+        String novoEndereco = endereco.getText();
+        System.out.println("Novo endereco: " + novoEndereco);
+
     }//GEN-LAST:event_enderecoActionPerformed
 
     private void paisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paisActionPerformed
-        // TODO add your handling code here:
+
+        String novoPais = pais.getText();
+        System.out.println("Novo país: " + novoPais);
+
     }//GEN-LAST:event_paisActionPerformed
 
     private void nascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nascimentoActionPerformed
-        // TODO add your handling code here:
+        String novaData = nascimento.getText();
+        System.out.println("Nova data de nascimento: " + novaData);
     }//GEN-LAST:event_nascimentoActionPerformed
 
     private void telefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telefoneActionPerformed
-        // TODO add your handling code here:
+        String novoTelefone = telefone.getText();
+        System.out.println("Novo telefone: " + novoTelefone);
     }//GEN-LAST:event_telefoneActionPerformed
 
     private void nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeActionPerformed
-        // TODO add your handling code here:
+        String novoNome = nome.getText();
+        System.out.println("Novo nome: " + novoNome);
     }//GEN-LAST:event_nomeActionPerformed
 
     /**
