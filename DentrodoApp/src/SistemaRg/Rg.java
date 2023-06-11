@@ -113,7 +113,13 @@ public class Rg extends javax.swing.JFrame {
 
         jButton5.setText("Excluir");
 
-        jLabel15.setText("E-mail");
+        jLabel15.setText("Email");
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -299,6 +305,11 @@ public class Rg extends javax.swing.JFrame {
         String novoNome = nome.getText();
         System.out.println("Novo nome: " + novoNome);
     }//GEN-LAST:event_nomeActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        String novoEmail = nome.getText();
+        System.out.println("Novo E-mail: " + novoEmail);        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
