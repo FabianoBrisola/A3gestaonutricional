@@ -111,6 +111,7 @@ public class CalcularImc extends javax.swing.JFrame {
     private double calcularIMC(double peso, double altura) {
         double imc = peso / (altura * altura);
         return imc;
+        
     }
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
 
