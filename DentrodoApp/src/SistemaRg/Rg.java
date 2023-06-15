@@ -1,5 +1,11 @@
 package SistemaRg;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Rg extends javax.swing.JFrame {
 
     public Rg() {
@@ -110,6 +116,11 @@ public class Rg extends javax.swing.JFrame {
         });
 
         jButton3.setText("Salvar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton5.setText("Excluir");
 
@@ -310,6 +321,24 @@ public class Rg extends javax.swing.JFrame {
         String novoEmail = nome.getText();
         System.out.println("Novo E-mail: " + novoEmail);        // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Connection conexao = new Conexao().getConnexion();
+        
+        String sql = "insert into (usuario,sexo,email,senha) values ('rafael','masculino','rafa@hotmail.com','123456'): ";
+        
+        try {
+            PreparedStatement prepareStatement = conexao.prepareStatement(sql);
+       prepareStatement.execute();
+       
+       conexao.close();
+        
+        } catch (SQLException ex) {
+            Logger.getLogger(Rg.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
