@@ -18,6 +18,7 @@ public class CadastroDAO {
         String sql = "INSERT INTO cadastro(nome,cpf,telefone,dataNascimento,usuario,senha,estado,cidade,bairro,cep) VALUES ('adm','adm','adm','adm','adm','adm','adm','adm','adm','adm');";
         PreparedStatement statmant = connection.prepareStatement(sql);
         statmant.execute();
+        
     }
 
 }
