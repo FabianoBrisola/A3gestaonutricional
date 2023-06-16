@@ -60,8 +60,6 @@ public class CalcularImc extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 153, 153));
         jLabel4.setText("AVALIE SEU ÍNDICE DE MASSA CORPORAL");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\verImc_resized_resized.png")); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -106,13 +104,13 @@ public class CalcularImc extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel3))
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
+                .addGap(33, 33, 33)
                 .addComponent(jButton1)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         pack();
