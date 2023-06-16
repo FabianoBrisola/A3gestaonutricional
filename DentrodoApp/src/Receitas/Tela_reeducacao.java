@@ -43,7 +43,7 @@ public class Tela_reeducacao extends javax.swing.JFrame {
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("         Principais passos para uma reeducação \n\nConscientização alimentar\nPlanejamento de refeições\nAlimentação equilibrada\nControle de porções\nRedução do consumo de alimentos processados\nHidratação adequada\nModeração e equilíbrio\nAutoconhecimento\n            Acompanhamento profissional\nSe possível, busque a orientação de um nutricionista \nou profissional de saúde especializado em nutrição \npara receber um plano personalizado e suporte \nadequado durante o processo de reeducação alimentar.");
+        jTextArea1.setText("         Principais passos para uma reeducação \n\n   Conscientização alimentar\n   Planejamento de refeições\n   Alimentação equilibrada\n   Controle de porções\n   Redução do consumo de alimentos processados\n   Hidratação adequada\n   Moderação e equilíbrio\n   Autoconhecimento\n            Acompanhamento profissional\n Se possível, busque a orientação de um nutricionista \nou profissional de saúde especializado em nutrição \npara receber um plano personalizado e suporte \nadequado durante o processo de reeducação alimentar.");
         jScrollPane1.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 435, 300));

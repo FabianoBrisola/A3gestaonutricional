@@ -27,18 +27,33 @@ public class Tela_vegana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("VEGANO");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(261, 6, -1, 22));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("                 Wrap Vegano de Abacate e Vegetais\nCalorias: Aproximadamente 200 calorias por porção\nIngredientes:\n   1 tortilha de trigo integral (90 calorias)\n   1/2 abacate maduro amassado (120 calorias)\n   1/4 de pepino em fatias finas (5 calorias)\n   1/4 de cenoura ralada (10 calorias)\n   1/4 de pimentão vermelho em tiras (7 calorias)\n   Folhas de alface ou rúcula a gosto\n   Suco de 1/2 limão (2 calorias)\n   Sal e pimenta a gosto\n                      Modo de preparo\n Espalhe o abacate amassado sobre a tortilha de trigo integral.\n Adicione as fatias de pepino, a cenoura ralada, as tiras de pimentão\n e as folhas de alface ou rúcula.\n Tempere com suco de limão, sal e pimenta a gosto.\n Enrole o wrap, fechando as pontas.\n Corte ao meio e sirva.\n Essa receita de wrap vegano é rápida, leve e cheia de sabores frescos.\n É uma opção prática para refeições mais leves.");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 34, 587, 392));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/c.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 460));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/bb.jpg"))); // NOI18N
+        jLabel3.setText("  ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 280, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +94,10 @@ public class Tela_vegana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

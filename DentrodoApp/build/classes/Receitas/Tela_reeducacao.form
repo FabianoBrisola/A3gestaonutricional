@@ -57,7 +57,7 @@
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="         Principais passos para uma reeduca&#xe7;&#xe3;o &#xa;&#xa;Conscientiza&#xe7;&#xe3;o alimentar&#xa;Planejamento de refei&#xe7;&#xf5;es&#xa;Alimenta&#xe7;&#xe3;o equilibrada&#xa;Controle de por&#xe7;&#xf5;es&#xa;Redu&#xe7;&#xe3;o do consumo de alimentos processados&#xa;Hidrata&#xe7;&#xe3;o adequada&#xa;Modera&#xe7;&#xe3;o e equil&#xed;brio&#xa;Autoconhecimento&#xa;            Acompanhamento profissional&#xa;Se poss&#xed;vel, busque a orienta&#xe7;&#xe3;o de um nutricionista &#xa;ou profissional de sa&#xfa;de especializado em nutri&#xe7;&#xe3;o &#xa;para receber um plano personalizado e suporte &#xa;adequado durante o processo de reeduca&#xe7;&#xe3;o alimentar."/>
+            <Property name="text" type="java.lang.String" value="         Principais passos para uma reeduca&#xe7;&#xe3;o &#xa;&#xa;   Conscientiza&#xe7;&#xe3;o alimentar&#xa;   Planejamento de refei&#xe7;&#xf5;es&#xa;   Alimenta&#xe7;&#xe3;o equilibrada&#xa;   Controle de por&#xe7;&#xf5;es&#xa;   Redu&#xe7;&#xe3;o do consumo de alimentos processados&#xa;   Hidrata&#xe7;&#xe3;o adequada&#xa;   Modera&#xe7;&#xe3;o e equil&#xed;brio&#xa;   Autoconhecimento&#xa;            Acompanhamento profissional&#xa; Se poss&#xed;vel, busque a orienta&#xe7;&#xe3;o de um nutricionista &#xa;ou profissional de sa&#xfa;de especializado em nutri&#xe7;&#xe3;o &#xa;para receber um plano personalizado e suporte &#xa;adequado durante o processo de reeduca&#xe7;&#xe3;o alimentar."/>
           </Properties>
         </Component>
       </SubComponents>
