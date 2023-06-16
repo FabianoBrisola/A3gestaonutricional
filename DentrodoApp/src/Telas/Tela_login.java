@@ -78,11 +78,13 @@ public class Tela_login extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        Tela_inicial teladeinicio = new Tela_inicial();
        teladeinicio.setVisible(true);
+       dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        Tela_cadastro teladecadastro = new Tela_cadastro();
        teladecadastro.setVisible(true);
+       dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
