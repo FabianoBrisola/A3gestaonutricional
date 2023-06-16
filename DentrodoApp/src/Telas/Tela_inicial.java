@@ -38,11 +38,11 @@ public class Tela_inicial extends javax.swing.JFrame {
         jMenu1.setText("MENU");
 
         jRadioButtonMenuItem1.setSelected(true);
-        jRadioButtonMenuItem1.setText("Cadastro");
+        jRadioButtonMenuItem1.setText("Alteração de cadastro");
         jMenu1.add(jRadioButtonMenuItem1);
 
         jRadioButtonMenuItem2.setSelected(true);
-        jRadioButtonMenuItem2.setText("Alteração de cadastro");
+        jRadioButtonMenuItem2.setText("Suporte");
         jMenu1.add(jRadioButtonMenuItem2);
 
         jRadioButtonMenuItem3.setSelected(true);
