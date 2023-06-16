@@ -104,10 +104,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagem/conceito-de-nutricao-equilibrada-para-uma-dieta-alimentar-limpa-variedade-de-alimentos-saudaveis-ingredientes-de-superalimento-para-cozinhar-na-mesa-da-cozinha-vista-superior-do-plano-de-fundo-copie-o-espaco_419307-1779.jpg"/>
+          <Image iconType="3" name="/imagem/aaaa.jpg"/>
         </Property>
       </Properties>
       <Constraints>

@@ -19,7 +19,7 @@ public class Tela_login extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
@@ -43,8 +43,8 @@ public class Tela_login extends javax.swing.JFrame {
         jButton1.setText("Entrar");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/conceito-de-nutricao-equilibrada-para-uma-dieta-alimentar-limpa-variedade-de-alimentos-saudaveis-ingredientes-de-superalimento-para-cozinhar-na-mesa-da-cozinha-vista-superior-do-plano-de-fundo-copie-o-espaco_419307-1779.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 360, 400));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/aaaa.jpg"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 360, 400));
 
         jMenu1.setText("MENU");
 
@@ -99,7 +99,7 @@ public class Tela_login extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPasswordField jPasswordField1;
