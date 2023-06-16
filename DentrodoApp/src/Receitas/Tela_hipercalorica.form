@@ -20,16 +20,74 @@
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
   </AuxValues>
 
-  <Layout>
-    <DimensionLayout dim="0">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
-      </Group>
-    </DimensionLayout>
-    <DimensionLayout dim="1">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
-      </Group>
-    </DimensionLayout>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
   </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="HIPERCAL&#xd3;RICA"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="256" y="11" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="10" y="40" width="627" height="385"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Monospaced" size="12" style="0"/>
+            </Property>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="                         Torta de Chocolate e Amendoim&#xa;Ingredientes:&#xa;200g de chocolate meio amargo (1060 calorias)&#xa;1 x&#xed;cara de manteiga sem sal (1628 calorias)&#xa;1 x&#xed;cara de a&#xe7;&#xfa;car (774 calorias)&#xa;4 ovos (280 calorias)&#xa;1 x&#xed;cara de farinha de trigo (455 calorias)&#xa;1 x&#xed;cara de amendoim torrado e picado (828 calorias)&#xa;1 colher de ch&#xe1; de ess&#xea;ncia de baunilha&#xa;Pitada de sal&#xa;Modo de preparo:&#xa;Preaque&#xe7;a o forno a 180&#xb0;C e unte uma forma redonda.Derreta o chocolate e&#xa;a manteiga em banho-maria ou no micro-ondas. Em uma tigela grande, misture&#xa;o a&#xe7;&#xfa;car, os ovos e a ess&#xea;ncia de baunilha. Adicione a mistura de chocolate e manteiga &#xa;derretidos e mexa bem. Acrescente a farinha de trigo e o sal, misturando at&#xe9; incorporar&#xa;todos os ingredientes. Adicione metade do amendoim picado &#xe0; massa e misture. Despeje a &#xa;massa na forma untada e espalhe o restante do amendoim por cima. Leve ao forno por &#xa;aproximadamente 35-40 minutos, ou at&#xe9; que a superf&#xed;cie esteja firme e levemente crocante.&#xa;Retire do forno e deixe esfriar antes de desenformar. Corte em fatias e sirva. &#xa;(Total aproximado de calorias: 5025 calorias)"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagem/bb.jpg"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="290" y="0" width="360" height="450"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagem/c.jpg"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="   "/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="290" height="450"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+  </SubComponents>
 </Form>

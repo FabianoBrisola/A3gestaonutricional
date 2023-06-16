@@ -27,18 +27,34 @@ public class Tela_hipercalorica extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("HIPERCALÓRICA");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 11, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("                         Torta de Chocolate e Amendoim\nIngredientes:\n200g de chocolate meio amargo (1060 calorias)\n1 xícara de manteiga sem sal (1628 calorias)\n1 xícara de açúcar (774 calorias)\n4 ovos (280 calorias)\n1 xícara de farinha de trigo (455 calorias)\n1 xícara de amendoim torrado e picado (828 calorias)\n1 colher de chá de essência de baunilha\nPitada de sal\nModo de preparo:\nPreaqueça o forno a 180°C e unte uma forma redonda.Derreta o chocolate e\na manteiga em banho-maria ou no micro-ondas. Em uma tigela grande, misture\no açúcar, os ovos e a essência de baunilha. Adicione a mistura de chocolate e manteiga \nderretidos e mexa bem. Acrescente a farinha de trigo e o sal, misturando até incorporar\ntodos os ingredientes. Adicione metade do amendoim picado à massa e misture. Despeje a \nmassa na forma untada e espalhe o restante do amendoim por cima. Leve ao forno por \naproximadamente 35-40 minutos, ou até que a superfície esteja firme e levemente crocante.\nRetire do forno e deixe esfriar antes de desenformar. Corte em fatias e sirva. \n(Total aproximado de calorias: 5025 calorias)");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 627, 385));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/bb.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 360, 450));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/c.jpg"))); // NOI18N
+        jLabel3.setText("   ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 450));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +95,10 @@ public class Tela_hipercalorica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
