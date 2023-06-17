@@ -15,10 +15,10 @@ public class CadastroDAO {
     // metodo de inserir usuario ao banco de dados 
 
     public void insert(Cadastro cadastro) throws SQLException {
-        String sql = "INSERT INTO cadastro(nome,cpf,telefone,dataNascimento,usuario,senha,estado,cidade,bairro,cep) VALUES ('adm','adm','adm','adm','adm','adm','adm','adm','adm','adm');";
+        String sql = "INSERT INTO cadastro(nome,cpf,telefone,dataNascimento,usuario,senha,estado,cidade,bairro,cep) VALUES ('"+cadastro.getNome()+"','"+cadastro.getCpf()+"','"+cadastro.getTelefone()+"','"+cadastro.getDataNascimento()+"','"+cadastro.getUsuario()+"','"+cadastro.getSenha()+"','"+cadastro.getEstado()+"','"+cadastro.getCidade()+"','"+cadastro.getBairro()+"','"+cadastro.getCep()+"');";
         PreparedStatement statmant = connection.prepareStatement(sql);
         statmant.execute();
-        
+        connection.close();
     }
 
 }
