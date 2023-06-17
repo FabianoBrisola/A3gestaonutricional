@@ -5,6 +5,7 @@
  */
 package Telas;
 
+import Receitas.Tela_agua;
 import Receitas.Tela_carb;
 import Receitas.Tela_hipercalorica;
 import Receitas.Tela_reeducacao;
@@ -116,7 +117,15 @@ public class Tela_inicial extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setBackground(new java.awt.Color(0, 255, 255));
+        jButton7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setText("Beba água");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jMenu1.setText("MENU");
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
@@ -226,6 +235,12 @@ public class Tela_inicial extends javax.swing.JFrame {
         telaimc.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        Tela_agua tela_agua = new Tela_agua();
+        tela_agua.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
