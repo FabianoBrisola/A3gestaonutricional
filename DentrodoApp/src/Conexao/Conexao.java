@@ -6,15 +6,21 @@ import java.sql.SQLException;
 
 public class Conexao {
 
-    public static void main(String[] args) throws SQLException {
-        Connection connect;
-        connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/sgn?zeroDateTimeBehavior=convertToNull", "root", "");
-        System.out.println("Conectado com o servidor!");
-        connect.close();
+    public static Connection getConnection() {
+        Connection connection = null;
 
-    }
+        try {
+            // Configurações de conexão com o BD
+            String url = "jdbc:mysql://localhost:3306/sgn";
+            String user = "root";
+            String password = "";
 
-    public static void close() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            // Estabelecer conexão com o BD
+            connection = DriverManager.getConnection(url, user, password);
+        } catch (SQLException e) {
+            System.out.println("Erro ao conectar ao banco de dados: " + e.getMessage());
+        }
+
+        return connection;
     }
 }

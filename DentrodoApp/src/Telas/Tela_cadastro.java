@@ -1,21 +1,20 @@
-
 package Telas;
 
+import Cadastro.Cadastro;
+import Conexao.Conexao;
 import dao.CadastroDAO;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 public class Tela_cadastro extends javax.swing.JFrame {
 
-    
     public Tela_cadastro() {
         initComponents();
     }
 
-    
+
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -162,19 +161,22 @@ public class Tela_cadastro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       //testando para salvar o cadastro
-        Connection conexao;
+
+        // Dados de exemplo para cadastro
+        Cadastro cadastro = new Cadastro("Fabiano", "123456");
+
+        // Obter a conexão com o banco de dados
+        Connection conexao = Conexao.getConnection();
+
+        // Inserir o cadastro no banco de dados usando o CadastroDAO
+        CadastroDAO cadastroDao = new CadastroDAO(conexao);
         try {
-            conexao = new dao.ConexaoDAO().getConnection();
-            CadastroDAO cadastroDAO = new CadastroDAO(conexao);
-            
-            //cadastroDAO.insert("");
-            
+            cadastroDao.insert(cadastro);
+            System.out.println("Cadastro inserido com sucesso!");
         } catch (SQLException ex) {
             Logger.getLogger(Tela_cadastro.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
