@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class Tela_cadastro extends javax.swing.JFrame {
 
@@ -20,29 +21,29 @@ public class Tela_cadastro extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jTextFieldnome = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jTextField2 = new javax.swing.JTextField();
+        jFormattedTextFieldcpf = new javax.swing.JFormattedTextField();
+        jTextFieldtelefone = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
+        jFormattedTextFielddatan = new javax.swing.JFormattedTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        jTextFieldusuario = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jFormattedTextField3 = new javax.swing.JFormattedTextField();
+        jTextFieldestado = new javax.swing.JTextField();
+        jTextFieldcep = new javax.swing.JTextField();
+        jTextFieldbairro = new javax.swing.JTextField();
+        jFormattedTextFieldcidade = new javax.swing.JFormattedTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
+        jPasswordFieldsenha = new javax.swing.JPasswordField();
         jLabel14 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -59,7 +60,7 @@ public class Tela_cadastro extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nome");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 200, -1));
+        getContentPane().add(jTextFieldnome, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 200, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -70,32 +71,31 @@ public class Tela_cadastro extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Telefone");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
-        getContentPane().add(jFormattedTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 200, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 200, -1));
+        getContentPane().add(jFormattedTextFieldcpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 200, -1));
+        getContentPane().add(jTextFieldtelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 200, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Data de nascimento");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, -1, 27));
-        getContentPane().add(jFormattedTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 70, 164, -1));
+        getContentPane().add(jFormattedTextFielddatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 70, 164, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Usuario");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldusuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                jTextFieldusuarioActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 120, 164, -1));
+        getContentPane().add(jTextFieldusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 120, 164, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Senha");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, -1, -1));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, 164, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -121,16 +121,16 @@ public class Tela_cadastro extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("CEP");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, -1, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 117, -1));
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 310, 109, -1));
+        getContentPane().add(jTextFieldestado, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 117, -1));
+        getContentPane().add(jTextFieldcep, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 310, 109, -1));
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldbairro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jTextFieldbairroActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 108, -1));
-        getContentPane().add(jFormattedTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 117, -1));
+        getContentPane().add(jTextFieldbairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 108, -1));
+        getContentPane().add(jFormattedTextFieldcidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 320, 117, -1));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setText("SALVAR");
@@ -147,10 +147,11 @@ public class Tela_cadastro extends javax.swing.JFrame {
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/c.jpg"))); // NOI18N
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 360, 430));
+        getContentPane().add(jPasswordFieldsenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, 160, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/bb.jpg"))); // NOI18N
         jLabel14.setText(" ");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, -20, 250, 430));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, -20, 260, 430));
 
         jMenu1.setText("MENU");
         jMenuBar1.add(jMenu1);
@@ -162,8 +163,18 @@ public class Tela_cadastro extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        // Dados de exemplo para cadastro
-        Cadastro cadastro = new Cadastro("Fabiano", "123456");
+        String nome = jTextFieldnome.getText();
+        String cpf = jFormattedTextFieldcpf.getText();
+        String telefone = jTextFieldtelefone.getText();
+        String datan = jFormattedTextFielddatan.getText();
+        String usuario = jTextFieldusuario.getText();
+        String senha = jPasswordFieldsenha.getText();
+        String estado = jTextFieldestado.getText();
+        String cidade = jFormattedTextFieldcidade.getText();
+        String bairro = jTextFieldbairro.getText();
+        String cep = jTextFieldcep.getText();
+
+        Cadastro cadastro = new Cadastro(nome, cpf, telefone, datan, usuario, senha, estado, cidade, bairro, cep);
 
         // Obter a conexão com o banco de dados
         Connection conexao = Conexao.getConnection();
@@ -172,20 +183,31 @@ public class Tela_cadastro extends javax.swing.JFrame {
         CadastroDAO cadastroDao = new CadastroDAO(conexao);
         try {
             cadastroDao.insert(cadastro);
-            System.out.println("Cadastro inserido com sucesso!");
+
+            JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
+
         } catch (SQLException ex) {
             Logger.getLogger(Tela_cadastro.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Erro ao conectar ao banco de dados!");
+        } finally {
+            if (conexao != null) {
+                try {
+                    conexao.close();
+                } catch (SQLException ex) {
+                    Logger.getLogger(Tela_cadastro.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
         }
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void jTextFieldusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldusuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_jTextFieldusuarioActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jTextFieldbairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldbairroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_jTextFieldbairroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -225,9 +247,9 @@ public class Tela_cadastro extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
-    private javax.swing.JFormattedTextField jFormattedTextField3;
+    private javax.swing.JFormattedTextField jFormattedTextFieldcidade;
+    private javax.swing.JFormattedTextField jFormattedTextFieldcpf;
+    private javax.swing.JFormattedTextField jFormattedTextFielddatan;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -244,12 +266,12 @@ public class Tela_cadastro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
+    private javax.swing.JPasswordField jPasswordFieldsenha;
+    private javax.swing.JTextField jTextFieldbairro;
+    private javax.swing.JTextField jTextFieldcep;
+    private javax.swing.JTextField jTextFieldestado;
+    private javax.swing.JTextField jTextFieldnome;
+    private javax.swing.JTextField jTextFieldtelefone;
+    private javax.swing.JTextField jTextFieldusuario;
     // End of variables declaration//GEN-END:variables
 }

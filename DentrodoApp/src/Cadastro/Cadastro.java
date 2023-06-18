@@ -3,7 +3,7 @@ package Cadastro;
 
 
 public class Cadastro {
-   private int id;
+  
    private String nome;
    private String cpf;
    private String telefone;
@@ -18,8 +18,8 @@ public class Cadastro {
    
    //metodo construtor
 
-    public Cadastro(int id, String nome, String cpf, String telefone, String dataNascimento, String usuario, String senha, String estado, String cidade, String bairro, String cep) {
-        this.id = id;
+    public Cadastro(String nome, String cpf, String telefone, String dataNascimento, String usuario, String senha, String estado, String cidade, String bairro, String cep) {
+        
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
@@ -40,14 +40,6 @@ public class Cadastro {
     }
     
     //adicionar get e set
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getNome() {
         return nome;
