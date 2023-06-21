@@ -43,16 +43,16 @@ public class Tela_inicial extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItem3 = new javax.swing.JRadioButtonMenuItem();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Dietas Exclusivas");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 102, 255));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -63,9 +63,12 @@ public class Tela_inicial extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 56, 161, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("As melhores dietas para atingir seu objetivo");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 32, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(0, 255, 153));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -76,6 +79,7 @@ public class Tela_inicial extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 85, -1, -1));
 
         jButton3.setBackground(new java.awt.Color(255, 0, 0));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -86,6 +90,7 @@ public class Tela_inicial extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 114, 161, -1));
 
         jButton4.setBackground(new java.awt.Color(0, 153, 0));
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -96,6 +101,7 @@ public class Tela_inicial extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 153, 161, -1));
 
         jButton5.setBackground(new java.awt.Color(255, 153, 153));
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -106,6 +112,7 @@ public class Tela_inicial extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 182, 161, -1));
 
         jButton6.setBackground(new java.awt.Color(153, 102, 255));
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -116,6 +123,7 @@ public class Tela_inicial extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 240, 161, -1));
 
         jButton7.setBackground(new java.awt.Color(0, 255, 255));
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -126,72 +134,13 @@ public class Tela_inicial extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 211, 161, -1));
 
-        jMenu1.setText("MENU");
-        jMenu1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu1ActionPerformed(evt);
-            }
-        });
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/bb.jpg"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, -20, 40, 320));
 
-        jRadioButtonMenuItem1.setSelected(true);
-        jRadioButtonMenuItem1.setText("Alteração de cadastro");
-        jMenu1.add(jRadioButtonMenuItem1);
-
-        jRadioButtonMenuItem2.setSelected(true);
-        jRadioButtonMenuItem2.setText("Suporte");
-        jMenu1.add(jRadioButtonMenuItem2);
-
-        jRadioButtonMenuItem3.setSelected(true);
-        jRadioButtonMenuItem3.setText("Sair");
-        jMenu1.add(jRadioButtonMenuItem3);
-
-        jMenuBar1.add(jMenu1);
-
-        setJMenuBar(jMenuBar1);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jButton7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(196, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton6)
-                .addContainerGap())
-        );
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/c.jpg"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 360, 320));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -226,10 +175,6 @@ public class Tela_inicial extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
-        
-    }//GEN-LAST:event_jMenu1ActionPerformed
-
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         Tela_imc telaimc = new Tela_imc();
         telaimc.setVisible(true);
@@ -257,10 +202,7 @@ public class Tela_inicial extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
