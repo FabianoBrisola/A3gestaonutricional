@@ -1,6 +1,10 @@
 package Telas;
 
 import dao.Criar_BD;
+import dao.Login_DAO;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 public class Tela_login extends javax.swing.JFrame {
 
@@ -8,7 +12,6 @@ public class Tela_login extends javax.swing.JFrame {
         initComponents();
     }
 
-    
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -64,9 +67,28 @@ public class Tela_login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Tela_inicial teladeinicio = new Tela_inicial();
-        teladeinicio.setVisible(true);
-        dispose();
+        try {
+            String usuario = jTextField1.getText();
+            char[] senhachar = jPasswordField1.getPassword();
+            String senha = new String(senhachar);
+            Login_DAO logDAO = new Login_DAO();
+            ResultSet resultadolog = logDAO.autenticarUsuario(usuario, senha);
+            if (resultadolog.next()) {
+
+                Tela_inicial teladeinicio = new Tela_inicial();
+                teladeinicio.setVisible(true);
+                dispose();
+
+            } else {
+                JOptionPane.showMessageDialog(null, "Conta inválida");
+
+            }
+
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, " userLogDAO" + e);
+        }
+
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -79,9 +101,9 @@ public class Tela_login extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-         Criar_BD BD = new Criar_BD();
-       BD.criarBD();
-        
+        Criar_BD BD = new Criar_BD();
+        BD.criarBD();
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Tela_login().setVisible(true);

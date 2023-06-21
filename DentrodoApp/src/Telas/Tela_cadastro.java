@@ -186,6 +186,10 @@ public class Tela_cadastro extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
 
+            Tela_login login = new Tela_login();
+            login.setVisible(true);
+            dispose();
+
         } catch (SQLException ex) {
             Logger.getLogger(Tela_cadastro.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Erro ao conectar ao banco de dados!");
@@ -212,7 +216,6 @@ public class Tela_cadastro extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
